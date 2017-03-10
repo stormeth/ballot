@@ -18,9 +18,6 @@ contract('B1', function(accounts) {
         return Ballot.deployed().then(function(instance) {
             meta = instance;
 
-        // Do all the minting up front so I can play with the
-        // ability for others besides the minter to mint coins
-
             return meta.giveRightToVote(ac1);
         }).then(function() {
 
